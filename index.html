@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stargazers log</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -9,6 +10,18 @@
     <h1>Stargazers log</h1>
     <p>A log of the repositories I've starred.</p>
     <ul id="starred"></ul>
+    <main>
+      <h1>Stargazers log</h1>
+      <p>A log of the repositories I've starred.</p>
+
+      <div id="starred-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+      <ul id="starred" aria-live="polite" aria-busy="true"></ul>
+
+      <noscript>
+        <p>This page requires JavaScript to display your starred repositories.</p>
+      </noscript>
+    </main>
+
     <script src="script.js"></script>
   </body>
   <div id="starred-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
